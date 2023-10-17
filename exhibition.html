@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition & Event | yeesiàsià gallery</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/exhibition.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+<body>
+    <div class="main_container">
+        <!-- header -->
+        <input type="checkbox" name="hamberger" id="ham">
+        <header class="main_header">
+            <div class="logo">
+                <h1><a href="index.html"><img src="img/logo/logo_vector.svg" alt="yeesiàsià gallery"></a></h1>
+            </div>
+
+            <!-- hamburger selector -->
+            <label for="ham" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="visit.html">visit</a></li>
+                    <li><a href="exhibition.html">exhibition&event</a></li>
+                    <li><a href="tickets.html">tickets</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <!-- banner 輪播圖 -->
+        <!-- carousel -->
+        <div class="banner_wrapper">
+            <div class="banner_slider">
+                <div class="banner_item">
+                    <div class="banner_card">
+                        <div class="banner_img">
+                            <img src="img/exhibition/current/ex01.jpg" alt="information">
+                        </div>
+                        <div class="banner_info">
+                            <h4>Dreamscape -
+                                Where Fantasy and Reality Converge</h4>
+                            <span>2023.04.18 - 2023.06.13</span>
+                            <p>Step into a realm of enchantment where you encounter captivating scenes where reality and
+                                fantasy intertwine. Through their rich imagination and unique techniques, the artists
+                                have
+                                created breath-taking artworks that transport you to a dreamlike world filled with
+                                beauty
+                                and mystery.</p>
+                            <div class="page_link">
+                                <a href="ex_intro.html">view all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_item">
+                    <div class="banner_card">
+                        <div class="banner_img">
+                            <img src="img/exhibition/current/banner02.jpg" alt="information">
+                        </div>
+                        <div class="banner_info">
+                            <h4>Dance of Colors: Pour Painting Exhibition</h4>
+                            <span>2023.05.18 - 2023.07.31</span>
+                            <p>Unique form of art where artists use different colors and materials to pour paint onto a
+                                canvas, allowing it to freely flow and form rich and colorful visuals through the forces
+                                of gravity and motion. </p>
+                            <div class="page_link">
+                                <a href="ex_intro.html">view all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_item">
+                    <div class="banner_card">
+                        <div class="banner_img">
+                            <img src="img/event/event01.jpg" alt="information">
+                        </div>
+                        <div class="banner_info">
+                            <h4>Beauty of Nature: Embracing the Brushstrokes of Nature</h4>
+                            <span>2023.04.18 - 2023.06.13</span>
+                            <p>Through the exhibition, you will immerse yourself in the beauty of nature, feeling the
+                                vitality of trees, the flow of water, and the magnificence of mountains and rivers. Let
+                                these artworks guide you back to nature and reconnect with the natural world.</p>
+                            <div class="page_link">
+                                <a href="ex_intro.html">view all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_item">
+                    <div class="banner_card">
+                        <div class="banner_img">
+                            <img src="img/event/event05.jpg" alt="information">
+                        </div>
+                        <div class="banner_info">
+                            <h4>Dreamscape -
+                                Where Fantasy and Reality Converge</h4>
+                            <span>2023.04.18 - 2023.06.13</span>
+                            <p>Step into a realm of enchantment where you encounter captivating scenes where reality and
+                                fantasy intertwine. Through their rich imagination and unique techniques, the artists
+                                have
+                                created breath-taking artworks that transport you to a dreamlike world filled with
+                                beauty
+                                and mystery.</p>
+                            <div class="page_link">
+                                <a href="ex_intro.html">view all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- past exhibition -->
+        <section class="past">
+            <div class="container">
+                <div class="past_title">
+                    <h2>EXHIBITION & EVENT</h2>
+                </div>
+                <div id="btnWrapper">
+                    <button class="btn active" onclick="filterSelection('all')">
+                        ALL
+                    </button>
+                    <button class="btn" onclick="filterSelection('exhibition')">
+                        EXHIBITION
+                    </button>
+                    <button class="btn" onclick="filterSelection('event')">
+                        EVENT
+                    </button>
+                </div>
+
+                <div class="past_wrapper">
+
+                    <div class="pastItem event">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/event/event01.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>Beauty of Nature</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem event">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/exhibition/past/past01.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>Hide and Seek</h3>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="pastItem exhibition">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/exhibition/past/past02.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>JUST color</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem exhibition">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/exhibition/past/past03.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>SEEing or not</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem exhibition">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/exhibition/past/past04.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>WoooooD in</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem event">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/exhibition/past/past05.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>Catch me IF U CAN</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem event">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/event/event02.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>Finding EGGS</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem exhibition">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/exhibition/past/past06.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>WHO U Want to BE</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem exhibition">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/exhibition/past/past07.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>FLOWER EFFECT</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem exhibition">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/exhibition/past/past08.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>FINDING inner peace</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem exhibition">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/exhibition/past/past09.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>STANDIND by ur side</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="pastItem event">
+                        <a href="ex_intro.html">
+                            <div class="past_img">
+                                <img src="img/event/event03.jpg" alt="exhibition">
+                            </div>
+                            <div class="past_ex_intro">
+                                <h3>POUR it DOWN</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="more_link">
+                    <a href="#">more</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- top button -->
+        <button onclick="topFunction()" class="topBtn" title="go to top">TOP</button>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer_wrapper">
+                <div class="footer_logo">
+                    <a href="index.html">
+                        <img src="img/logo/logo_vertiacl.svg" alt="yeesiàsià gallery">
+                    </a>
+                </div>
+                <div class="footer_info">
+                    <div class="footer_openinghours">
+                        <div class="footer_title">
+                            <h4>OPENING HOURS</h4>
+                        </div>
+                        <div class="footer_content">
+                            <div class="footer_openinghoursinfo">
+                                <div class="footer_date">
+                                    <p>SUNDAY</p>
+                                </div>
+                                <div class="footer_time">
+                                    <p>closed</p>
+                                </div>
+                            </div>
+                            <div class="footer_openinghoursinfo">
+                                <div class="footer_date">
+                                    <p>MONDAY - SATURDAY</p>
+                                </div>
+                                <div class="footer_time">
+                                    <p>11:00 am - 06:00 pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_address">
+                        <div class="footer_title">
+                            <h4>ADDRESS</h4>
+                        </div>
+                        <div class="footer_content">
+                            <P>Trekanten C 1, 2630 Taastrup Nykirke Høje Taastrup, Denmark</P>
+                        </div>
+                    </div>
+                    <div class="footer_nav">
+                        <div class="footer_title">
+                            <h4>MORE ABOUT</h4>
+                        </div>
+                        <div class="footer_content">
+                            <ul>
+                                <li>
+                                    <a href="about.html">
+                                        # concept & space
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="visit.html">
+                                        # visit information
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="exhibition.html">
+                                        # exhibition & event
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tickets.html">
+                                        # tickets & FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="news.html">
+                                        # news
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_socialmedia">
+                        <div class="footer_title">
+                            <h4>FOLLOW US</h4>
+                        </div>
+                        <div class="footer_content">
+                            <div class="socialmedia_icon">
+                                <a href="#"><img src="img/icon/40/line.svg" alt="LINE"></a>
+                                <a href="#"><img src="img/icon/40/instagram.svg" alt="INSTAGRAM"></a>
+                                <a href="#"><img src="img/icon/40/facebook.svg" alt="FACEBOOK"></a>
+                                <a href="#"><img src="img/icon/40/mail.svg" alt="MAIL"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; yeesiàsià gallery 2023</p>
+                        <span>Personal project from the 88th student of TibaMe Front-End Engineering training program
+                        </span>
+                        <br>
+                        <span>For learning and showcasing purposes only</span>
+                    </div>
+
+                </div>
+                <div class="footer_img">
+                    <img src="img/about/concept03.jpg" alt="inner peace">
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+
+    <!-- carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        // carousel
+        $(document).ready(function () {
+            $('.banner_slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 5000,
+            });
+        });
+
+    </script>
+
+    <!-- filter btn -->
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("pastItem");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("btnWrapper");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+    <!-- top btn js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

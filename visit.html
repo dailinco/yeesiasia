@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit | yeesiàsià gallery</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <!-- google font link for icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/visit.css">
+    <script src="js/calendar.js" defer></script>
+</head>
+
+<body>
+    <div class="main_container">
+        <!-- header -->
+        <input type="checkbox" name="hamberger" id="ham">
+        <header class="main_header">
+            <div class="logo">
+                <h1><a href="index.html"><img src="img/logo/logo_vector.svg" alt="yeesiàsià gallery"></a></h1>
+            </div>
+
+            <!-- hamburger selector -->
+            <label for="ham" class="hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="visit.html">visit</a></li>
+                    <li><a href="exhibition.html">exhibition&event</a></li>
+                    <li><a href="tickets.html">tickets</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- banner -->
+        <div class="visit_banner">
+            <div class="banner_img">
+                <img src="img/bg/banner_visit.jpg" alt="visit information">
+            </div>
+            <div class="banner_title">
+                <h2>visit information</h2>
+            </div>
+        </div>
+
+        <!-- opening hours -->
+        <section class="opening_info">
+            <div class="container">
+                <div class="opening_info_title">
+                    <h2>OPENING HOURS</h2>
+                </div>
+                <div class="opening_info_wrapper">
+                    <div class="opening_hours_wrapper">
+                        <div class="opening_item">
+                            <div class="opening_day">
+                                <p>Sunday</p>
+                            </div>
+                            <div class="opening_hours">
+                                <p>CLOSED</p>
+                            </div>
+                        </div>
+                        <div class="opening_item">
+                            <div class="opening_day">
+                                <p>Monday</p>
+                            </div>
+                            <div class="opening_hours">
+                                <p>11:00 AM - 06:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="opening_item">
+                            <div class="opening_day">
+                                <p>Tuesday</p>
+                            </div>
+                            <div class="opening_hours">
+                                <p>11:00 AM - 06:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="opening_item">
+                            <div class="opening_day">
+                                <p>Wednesday</p>
+                            </div>
+                            <div class="opening_hours">
+                                <p>11:00 AM - 06:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="opening_item">
+                            <div class="opening_day">
+                                <p>Thursday</p>
+                            </div>
+                            <div class="opening_hours">
+                                <p>11:00 AM - 06:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="opening_item">
+                            <div class="opening_day">
+                                <p>Friday</p>
+                            </div>
+                            <div class="opening_hours">
+                                <p>11:00 AM - 06:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="opening_item">
+                            <div class="opening_day">
+                                <p>Saturday</p>
+                            </div>
+                            <div class="opening_hours">
+                                <p>11:00 AM - 06:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="opening_txt">
+                            <p>
+                                Please note that the Museum may be closed for maintenance or an exhibition change out.
+                            </p>
+                            <p>
+                                Opening hours and days of the Museum may be changed depending on seasons or events.</p>
+                        </div>
+
+                    </div>
+                    <div class="calendar_wrapper">
+                        <div class="calender_header">
+                            <p class="current_date">
+                                <!-- September 2022 -->
+                            </p>
+                            <div class="icons">
+                                <span id="prev" class="material-symbols-rounded">
+                                    chevron_left
+                                </span>
+                                <span id="next" class="material-symbols-rounded">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+                        <div class="calendar_box">
+                            <ul class="weeks">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="days">
+                                <!-- <li class="inactive">28</li>
+                            <li class="inactive">29</li>
+                            <li class="inactive">30</li>
+                            <li class="inactive">31</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li class="active">22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li class="inactive">1</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- admission price -->
+        <section class="admission_price">
+            <div class="container">
+                <div class="price_title">
+                    <h2>ADMISSION PRICES</h2>
+                </div>
+
+                <div class="tickets_wrapper">
+                    <div class="tickets_item">
+                        <img src="img/icon/60/adult.svg" alt="adult">
+                        <p>Adult</p>
+                        <p class="tickets_price">$ 80</p>
+                    </div>
+                    <div class="tickets_item">
+                        <img src="img/icon/60/student.svg" alt="adult">
+                        <p>Student</p>
+                        <p class="tickets_price">$ 75</p>
+                        <div class="tickets_info">
+                            <p>Full-time with ID, including international students</p>
+                        </div>
+                    </div>
+                    <div class="tickets_item">
+                        <img src="img/icon/60/children.svg" alt="adult">
+                        <p>Children</p>
+                        <p class="tickets_price">$ FREE</p>
+                        <div class="tickets_info">
+                            <p>7 and under</p>
+                        </div>
+                    </div>
+                    <div class="tickets_item">
+                        <img src="img/icon/60/senior.svg" alt="adult">
+                        <p>Senior</p>
+                        <p class="tickets_price">$ 65</p>
+                        <div class="tickets_info">
+                            <p>65 and over with ID</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="page_link">
+                    <a href="tickets.html">Get tickets</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- visitor policies -->
+        <section class="policies">
+            <div class="container">
+                <div class="policies_title">
+                    <h2>VISITOR POLICIES</h2>
+                </div>
+                <div class="policies_basic">
+                    <div class="basic_wrapper">
+                        <div class="basic_item">
+                            <div class="basic_icon">
+                                <img src="img/icon/60/clothes-hanger.svg" alt="clothes-hanger">
+                            </div>
+                            <div class="basic_info">
+                                <div class="title">
+                                    <h4>COAT & BAG CHECK</h4>
+                                </div>
+                                <div class="txt">
+                                    <p>Coat check is open. Please see check all coats and large bags.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic_item">
+                            <div class="basic_icon">
+                                <img src="img/icon/60/phone-vibration.svg" alt="phone-vibration">
+                            </div>
+                            <div class="basic_info">
+                                <div class="title">
+                                    <h4>CELL PHONES</h4>
+                                </div>
+                                <div class="txt">
+                                    <p>Please set your phone to silent mode.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic_item">
+                            <div class="basic_icon">
+                                <img src="img/icon/60/baby-carrier.svg" alt="baby-carrier">
+                            </div>
+                            <div class="basic_info">
+                                <div class="title">
+                                    <h4>STROLLERS</h4>
+                                </div>
+                                <div class="txt">
+                                    <p>Strollers are permitted in the Museum, but stroller access may be limited in
+                                        certain
+                                        exhibitions pending space limitations. Please call ahead to confirm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic_item">
+                            <div class="basic_icon">
+                                <img src="img/icon/60/pencil.svg" alt="pencils">
+                            </div>
+                            <div class="basic_info">
+                                <div class="title">
+                                    <h4>SKETCHING</h4>
+                                </div>
+                                <div class="txt">
+                                    <p>Use of writing utensils other than pencils is prohibited in the exhibition
+                                        rooms.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic_item">
+                            <div class="basic_icon">
+                                <img src="img/icon/60/camera.svg" alt="cameras">
+                            </div>
+                            <div class="basic_info">
+                                <div class="title">
+                                    <h4>CAMERAS</h4>
+                                </div>
+                                <div class="txt">
+                                    <p>Photography is permitted in the Museum galleries unless otherwise noted.
+                                        Videotaping
+                                        and tripods are prohibited.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basic_item">
+                            <div class="basic_icon">
+                                <img src="img/icon/60/bottle.svg" alt="bottle">
+                            </div>
+                            <div class="basic_info">
+                                <div class="title">
+                                    <h4>FOOD & DRINK</h4>
+                                </div>
+                                <div class="txt">
+                                    <p>Use of closed water bottles is permitted in areas outside of the Museum’s
+                                        galleries.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="access_title">
+                    <h3>Accessibility</h3>
+                    <p>Please inquire at the Visitor Desk for any assistance you may require.</p>
+                </div>
+                <div class="access_wrapper">
+                    <div class="access_item">
+                        <div class="access_icon">
+                            <img src="img/icon/60/ear.svg" alt="hearing">
+                        </div>
+                        <div class="access_info">
+                            <div class="title">
+                                <h4>HEARING</h4>
+                            </div>
+                            <div class="txt">
+                                <p>Assistive listening devices, headsets, and neck loops are available for most
+                                    programs
+                                    at the yeesiàsià gallery.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="access_item">
+                        <div class="access_icon">
+                            <img src="img/icon/60/wheelchair.svg" alt="wheelchair">
+                        </div>
+                        <div class="access_info">
+                            <div class="title">
+                                <h4>WHEELCHAIRS</h4>
+                            </div>
+                            <div class="txt">
+                                <p>The gallery is wheelchair accessible. Two wheelchairs are available in the
+                                    Coat
+                                    Check
+                                    free of charge. Please call in advance to reserve one if you need it
+                                    during your visit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- route -->
+        <section class="route">
+            <div class="container">
+                <div class="route_title">
+                    <h2>ROUTE</h2>
+                </div>
+
+                <div class="transportation">
+                    <div class="means_item">
+                        <div class="means_icon">
+                            <img src="img/icon/60/bus.svg" alt="bus">
+                            <p>Bus</p>
+                        </div>
+                        <div class="means_info">
+                            
+                            <p>Take bus number X to the museum. The bus stop is located at street X and Y intersection,
+                                near the Z landmark. Once getting off the bus, please follow the signs to the gallery.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="means_item">
+                        <div class="means_icon">
+                            <img src="img/icon/60/subway.svg" alt="subway">
+                            <p>Subway</p>
+                        </div>
+                        <div class="means_info">
+                            <p>Take the MRT X-line to Y station. When getting off at the station, please follow the
+                                signs to the gallery.</p>
+                        </div>
+                    </div>
+                    <div class="means_item">
+                        <div class="means_icon">
+                            <img src="img/icon/60/car.svg" alt="car">
+                            <p>Car</p>
+                        </div>
+                        <div class="means_info">
+                            <p>From major road, take exit num and follow the signs to the gallery. There are ample
+                                parking lots in the surrounding area.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.249035944424!2d121.2224477747333!3d24.95764034136321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1684660253011!5m2!1szh-TW!2stw"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- top button -->
+        <button onclick="topFunction()" class="topBtn" title="go to top">TOP</button>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer_wrapper">
+                <div class="footer_logo">
+                    <a href="index.html">
+                        <img src="img/logo/logo_vertiacl.svg" alt="yeesiàsià gallery">
+                    </a>
+                </div>
+                <div class="footer_info">
+                    <div class="footer_openinghours">
+                        <div class="footer_title">
+                            <h4>OPENING HOURS</h4>
+                        </div>
+                        <div class="footer_content">
+                            <div class="footer_openinghoursinfo">
+                                <div class="footer_date">
+                                    <p>SUNDAY</p>
+                                </div>
+                                <div class="footer_time">
+                                    <p>closed</p>
+                                </div>
+                            </div>
+                            <div class="footer_openinghoursinfo">
+                                <div class="footer_date">
+                                    <p>MONDAY - SATURDAY</p>
+                                </div>
+                                <div class="footer_time">
+                                    <p>11:00 am - 06:00 pm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_address">
+                        <div class="footer_title">
+                            <h4>ADDRESS</h4>
+                        </div>
+                        <div class="footer_content">
+                            <P>Trekanten C 1, 2630 Taastrup Nykirke Høje Taastrup, Denmark</P>
+                        </div>
+                    </div>
+                    <div class="footer_nav">
+                        <div class="footer_title">
+                            <h4>MORE ABOUT</h4>
+                        </div>
+                        <div class="footer_content">
+                            <ul>
+                                <li>
+                                    <a href="about.html">
+                                        # concept & space
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="visit.html">
+                                        # visit information
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="exhibition.html">
+                                        # exhibition & event
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tickets.html">
+                                        # tickets & FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="news.html">
+                                        # news
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_socialmedia">
+                        <div class="footer_title">
+                            <h4>FOLLOW US</h4>
+                        </div>
+                        <div class="footer_content">
+                            <div class="socialmedia_icon">
+                                <a href="#"><img src="img/icon/40/line.svg" alt="LINE"></a>
+                                <a href="#"><img src="img/icon/40/instagram.svg" alt="INSTAGRAM"></a>
+                                <a href="#"><img src="img/icon/40/facebook.svg" alt="FACEBOOK"></a>
+                                <a href="#"><img src="img/icon/40/mail.svg" alt="MAIL"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; yeesiàsià gallery 2023</p>
+                        <span>Personal project from the 88th student of TibaMe Front-End Engineering training program
+                        </span>
+                        <br>
+                        <span>For learning and showcasing purposes only</span>
+                    </div>
+
+                </div>
+                <div class="footer_img">
+                    <img src="img/about/concept03.jpg" alt="inner peace">
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <!-- top btn js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
